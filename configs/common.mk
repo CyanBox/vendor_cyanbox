@@ -1,8 +1,8 @@
 # Common overlay
-PRODUCT_PACKAGE_OVERLAYS += vendor/rootbox/overlay/common
+PRODUCT_PACKAGE_OVERLAYS += vendor/cyanbox/overlay/common
 
 # Common dictionaries
-PRODUCT_PACKAGE_OVERLAYS += vendor/rootbox/overlay/dictionaries
+PRODUCT_PACKAGE_OVERLAYS += vendor/cyanbox/overlay/dictionaries
 
 # SuperUser
 SUPERUSER_EMBEDDED := true
@@ -21,9 +21,9 @@ PRODUCT_PACKAGES += \
     su \
     Torch
 
-# RootBox Packages
+# CyanBox Packages
 PRODUCT_PACKAGES += \
-    RootBox \
+    CyanBox \
     XposedDPI \
     XposedInstaller
 
@@ -64,7 +64,7 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/rootbox/prebuilt/preferences/$(TARGET_PRODUCT
 
 # Allow device family to add overlays and use a same prop.conf
 ifneq ($(OVERLAY_TARGET),)
-    PRODUCT_PACKAGE_OVERLAYS += vendor/rootbox/overlay/$(OVERLAY_TARGET)
+    PRODUCT_PACKAGE_OVERLAYS += vendor/cyanbox/overlay/$(OVERLAY_TARGET)
     PA_CONF_SOURCE := $(OVERLAY_TARGET)
 else
     PA_CONF_SOURCE := $(TARGET_PRODUCT)
