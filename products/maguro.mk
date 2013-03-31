@@ -14,7 +14,7 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/rootbox/overlay/tuna
 OVERLAY_TARGET := pa_xhdpi
 
 # Setup device specific product configuration.
-PRODUCT_NAME := rootbox_maguro
+PRODUCT_NAME := cyanbox_maguro
 PRODUCT_BRAND := google
 PRODUCT_DEVICE := maguro
 PRODUCT_MODEL := Galaxy Nexus
@@ -29,4 +29,4 @@ PRODUCT_PACKAGES += \
 
 # Copy Bootanimation
 PRODUCT_COPY_FILES += \
-    vendor/rootbox/prebuilt/xhdpi/bootanimation.zip:system/media/bootanimation.zip
+    vendor/cyanbox/prebuilt/xhdpi/bootanimation.zip:system/media/bootanimation.zip
